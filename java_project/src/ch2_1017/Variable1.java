@@ -4,7 +4,7 @@ public class Variable1 {
 
 	public static void main(String[] args) {
 
-		int level;              //정수형 변수 level을 선언
+		int level;      //정수형 변수 level을 선언
 		level = 10;		//level 변수에 10을 대입 초기화 최초의 변수에 값을 할당
 		byte b1 = 12;	// 선언과 동시에 값을 할당 
 		//기본 데이터 타입 primitive type.

@@ -15,6 +15,8 @@ public class CharacterEx1 {
 		System.out.println(ch2);
 		System.out.println("=====================");
 		int i1 = 67;
+		
+		
 		System.out.println(i1);
 		System.out.println((char)i1);
 		System.out.println("=====================");

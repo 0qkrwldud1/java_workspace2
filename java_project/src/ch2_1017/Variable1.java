@@ -19,3 +19,4 @@ public class Variable1 {
 	}
 
 }
+	

@@ -7,7 +7,7 @@ public class CharacterEx1 {
 		System.out.println(ch1);
 		//ch1 변수를 형변환, 명시적 형변환.  55
 		// 캐스팅 연산자를 갑자기 사용하고 있음. 당황하지 마세요.
-		//7장 까지는 가볍게 들어보시고, 복습하면 됩니다. 
+		//7장 까지는 가볍게 들어보시고, 복습하면 됩니다.ㅇㅇㅇ 
 		System.out.println((int)ch1);
 		System.out.println("=====================");
 		char ch2 = 66;

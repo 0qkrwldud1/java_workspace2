@@ -40,4 +40,4 @@ public class Person {
 				"몸무게: "+weight);
 	}
 }   
-
+//저장 22222

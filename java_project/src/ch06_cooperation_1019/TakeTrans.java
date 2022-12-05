@@ -27,10 +27,12 @@ public class TakeTrans {
 		
 		Student pjy3Student = new Student("박지영3",10000);
 		pjy3Student.takeTaxi(taxi3);
+		pjy3Student.takeTaxi(new Taxi(4));
 		System.out.println("3번 택시 타고 남은 잔액");
 		pjy3Student.showInfo();
 		System.out.println("3번 택시의 정보");
 		taxi3.showInfo();
+		  
 		
 		// 두 명의 학생을 생성
 		//Student studentJames = new Student("James", 5000);   

@@ -3,6 +3,7 @@ package ch06_staticex_1019;
 public class Student2 {
 	
 	private static int serialNum = 1000;
+	
 	int studentID;
 	String studentName;
 	int grade;

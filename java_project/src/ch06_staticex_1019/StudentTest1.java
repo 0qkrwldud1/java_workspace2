@@ -4,15 +4,23 @@ public class StudentTest1 {
 
 	public static void main(String[] args) {
 		
+		Student2 pjy6Student = new Student2();
+		System.out.println(Student2.getSerialNum());
+		Student2.setSerialNum(2000);
+		System.out.println(Student2.getSerialNum());
+		
+		
+		
+		
 		//학번
 		Student1 pjy3Student = new Student1();
-		System.out.println("pjy3Student의 학번: " + pjy3Student.serialNum);
+		System.out.println("pjy3Student의 학번: " + pjy3Student.studentID);
 		
 		Student1 pjy4Student = new Student1();
-		System.out.println("pjy4Student의 학번: " + pjy4Student.serialNum);
+		System.out.println("pjy4Student의 학번: " + pjy4Student.studentID);
 		
 		Student1 pjy5Student = new Student1();
-		System.out.println("pjy5Student의 학번: " + pjy5Student.serialNum);
+		System.out.println("pjy5Student의 학번: " + pjy5Student.studentID);
 		
 		
 		
@@ -22,8 +30,14 @@ public class StudentTest1 {
 		System.out.println(pjyStudent.serialNum);
 		System.out.println(Student.serialNum);
 		pjyStudent.serialNum++;
+		System.out.println(pjyStudent.serialNum);
+		System.out.println(Student.serialNum);
 		
+		
+		System.out.println("pjy2student의 정보");
 		Student pjy2Student = new Student();
+		System.out.println(pjy2Student.serialNum);
+		
 		
 
 		

@@ -24,20 +24,20 @@ public class Person {
 	public Person() {}
 	 
 	 //매개변수가 1개인 생성자.
-	 public Person(String pname) {
+	public Person(String pname) {
 	 name = pname;
 	  }
 	 
-	  public Person(String pname, float pheight, float pweight){
+	public Person(String pname, float pheight, float pweight){
 		   name = pname;
 		   height = pheight;
 		   weight = pweight;
 	  }//매개변수가 3개인 생성자.
 	  
-	  public void showInfo() {
+	public void showInfo() {
 		System.out.println("이름: "+name+
 				"키: "+height+
 				"몸무게: "+weight);
-	}
+	  }
 }   
-//저장 22222
+//저장 

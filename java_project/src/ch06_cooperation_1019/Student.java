@@ -16,6 +16,12 @@ public class Student {
 		  this.money -= 1000;
 		  
 	 }
+	 
+	 public void takeTaxi(Taxi taxi) {
+		  taxi.take(1000);
+		  this.money -= 1000;
+		  
+	 }
 	    
 	 public void takeSubway(Subway subway) {
 		  subway.take(1500);

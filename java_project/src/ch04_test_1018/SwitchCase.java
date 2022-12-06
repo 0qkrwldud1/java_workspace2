@@ -4,8 +4,8 @@ public class SwitchCase {
 	public static void main(String[] args) {
 
 		
-		int ranking =4;
-		String medal = "Silver";
+		int ranking =2;
+		String medal = "Bronze";
 		char medalColor;
 		
 		

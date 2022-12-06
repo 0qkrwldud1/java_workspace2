@@ -10,6 +10,7 @@ public class DoWhileExample {
 		int sum = 0;
 		
 		do{
+			System.out.println("do실행문이 계속 실행된다.");
 			sum += num;
 			num++;	
 			

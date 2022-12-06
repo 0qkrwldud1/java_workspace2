@@ -2,9 +2,9 @@ package ch03_test_1018;
 
 public class OperationEx2 {
 	public static void main(String[] args) {
-		int gameScore = 150;
+ 		int gameScore = 150;
 		
-		int lastScore1 = ++gameScore;
+		int lastScore1 = ++gameScore; //값이 먼저 증가
 		System.out.println("lastScore1 : " + lastScore1);
 		System.out.println("gameScore : " + gameScore);
 		

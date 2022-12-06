@@ -6,7 +6,7 @@ public class ContinueExample {
 		int total =0;
 		int num;
 		
-		for(num =0; num<=100; num++){
+		for(num =0; num<=10; num++){
 			
 			if( num%2 == 0) 
 				continue;

@@ -3,7 +3,7 @@ package ch03_test_1018;
 public class hello2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		// 실행 ctrl + f11
 		// 보통은 ctrl + /로 주석처리
 		// 여러줄 주석은 ctrl + shift + /

@@ -14,6 +14,20 @@ public class ObjectCopy3 {
 		bookArray2[1] = new Book();
 		bookArray2[2] = new Book();
 		
+		System.out.println("주솟값 확인하기");   
+		System.out.println("=== bookArray1 ===");    //bookArray1 출력
+		for(int i=0; i<bookArray1.length; i++){
+			System.out.println(bookArray1[i]);
+
+		}
+		
+		System.out.println("=== bookArray2 ===");    //bookArray2 출력
+		for(int i=0; i<bookArray2.length; i++){
+			System.out.println(bookArray2[i]);   // bookArray1 과 다른 내용으로 출력됨
+			
+		}
+		
+		
 		for(int i=0; i<bookArray1.length; i++){   // 각각의 요소를 복사
 			bookArray2[i].setBookName(bookArray1[i].getBookName());
 			bookArray2[i].setAuthor(bookArray1[i].getAuthor());

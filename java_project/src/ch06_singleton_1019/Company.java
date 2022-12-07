@@ -18,7 +18,9 @@ public class Company {
 	
 	// 기본 생성자 , private 밖에서 안보임. 안보이니 생성도 못함. 
 	// 이유? 객체 하나만 사용할려고.
-	private Company(){}
+	private Company(){
+		
+	}
 	
 	//getInstance() : 메서드 명
 	// 반환 타입 : Company 형. 

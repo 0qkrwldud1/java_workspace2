@@ -10,11 +10,11 @@ public class Student {
 	
 	// 제너릭으로 유효성 검사처럼, 데이터 형이 , Subject이라는 형으로만 들어 갈수 있다. 이 ArrayList 의 원소 타입
 	// Subject 타입의 참조형 변수(인스턴스)
-	ArrayList<Subject> subjectList;
-	ArrayList<Menu> LunchMenu;
+	ArrayList<Subject> subjectList; //여러개를 담는 그릇 ->어레이보다 업그레이드, 값을 추가하거나 삭제가 가능.
+	ArrayList<Menu> LunchMenu;		//<>안에 해당타입만 담을 수 있다 -> 제너릭.
 	
 		
-	public Student(int studentID, String studentName){
+	public Student(int studentID, String studentName){ //매개변수가 2개인 객체를 생성하게 되면-> 아이디, 이름, 과목을담는 리스트, 메뉴를 담는 리스트로 구성.
 		this.studentID = studentID;
 		this.studentName = studentName;
 		

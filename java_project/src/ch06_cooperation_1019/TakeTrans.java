@@ -6,7 +6,6 @@ public class TakeTrans {
 		
 		//객체 생성 매개변수가 2개
 		Student pjyStudent = new Student("박지영", 20000);
-		
 		Bus bus2 = new Bus(2);
 		Subway subway1 = new Subway("1");
 		Taxi taxi3 = new Taxi(3);
@@ -18,12 +17,13 @@ public class TakeTrans {
 		bus2.showInfo();
 
 		
-		Student pjy2Student = new Student("박지영2", 20000);
+		Student pjy2Student = new Student("박지영2", 30000);
 		pjy2Student.takeSubway(subway1);
 		System.out.println("지하철 1호선 타고 남은 잔액");
 		pjy2Student.showInfo();
 		System.out.println("지하철 1호선의 정보");
 		subway1.showInfo();
+		
 		
 		Student pjy3Student = new Student("박지영3",10000);
 		pjy3Student.takeTaxi(taxi3);

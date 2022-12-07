@@ -1,6 +1,7 @@
 package ch07_array_1019;
 
-import ch05_test_1205.person;
+import ch05_test.Person;
+
 
 public class ArrayTest {
 
@@ -8,7 +9,7 @@ public class ArrayTest {
 
 		int[] number = new int[] {1,2,3,4,5,6,7,8,9,10};
 		String[] str1 = new String[] {"pjy1","pjy2"};
-		person[] persons = new person[] {new person(), new person()};
+		Person[] persons = new Person[] {new Person(), new Person()};
 		
 			for(int i=0; i<number.length; i++){
 			 System.out.println(number[i]);

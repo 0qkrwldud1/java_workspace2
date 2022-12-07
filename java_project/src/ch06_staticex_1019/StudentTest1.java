@@ -12,7 +12,7 @@ public class StudentTest1 {
 		
 		
 		
-		//학번
+		//student1 클래스로 객체를 생성해서, 자동으로 학번이 어떻게 부여되는지 확인.
 		Student1 pjy3Student = new Student1();
 		System.out.println("pjy3Student의 학번: " + pjy3Student.studentID);
 		
@@ -24,14 +24,14 @@ public class StudentTest1 {
 		
 		
 		
-		//인스탄스 또는 해당 클래스명으로 접근할 수 있다.
+		//인스턴스 또는 해당 클래스명으로 접근할 수 있다.
 		Student pjyStudent = new Student();
 		pjyStudent.setStudentName("박지영"); 
-		System.out.println(pjyStudent.serialNum);
-		System.out.println(Student.serialNum);
-		pjyStudent.serialNum++;
-		System.out.println(pjyStudent.serialNum);
-		System.out.println(Student.serialNum);
+		System.out.println(pjyStudent.serialNum); //객체로 접근
+		System.out.println(Student.serialNum);    //클래스명으로 접근. 이 방법이 주로사용됨.
+		pjyStudent.serialNum++; //학번을 1씩 올린다.
+		System.out.println(pjyStudent.serialNum);  //객체로 접근
+		System.out.println(Student.serialNum);     //클래스명으로 접근. 이 방법이 주로사용됨.
 		
 		
 		System.out.println("pjy2student의 정보");

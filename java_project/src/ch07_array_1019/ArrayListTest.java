@@ -32,6 +32,8 @@ public class ArrayListTest {
 			student.showInfo();
 		}
 		
+		
+		
 		ArrayList<Book> library = new ArrayList<Book>(); //arraylist 선언, Book 타입만 넣을 수 있다. -> 제너릭
 
 		//.add를 사용해 객체생성후 리스트에 담고있다.
@@ -45,16 +47,15 @@ public class ArrayListTest {
 		
 		
 		for(int i=0; i<library.size(); i++){
-			
-	
+										//book타입의 book변수 선언.
 			Book book = library.get(i); //arraylist의 get이라는 메서드를 사용해 값을 가지고 온다.
 			book.showBookInfo();		//제너릭으로 book만 담기때문에 가져올 때도 book으로 가져옴.
-		}
+		}								//book의 정보를 보여주는 메서드를 for문으로 반복해서 나열.
 		
 		System.out.println();
 		System.out.println("=== 향상된 for문 사용 ===");
 		for(Book book : library){
-			book.showBookInfo();
+			book.showBookInfo();		//향상된 for문 -> book타입의 book이라는 변수의 향상된for문 library 어레이리스트를 반복해서 메서드를 이용해 나열.
 		}
 	}
 }

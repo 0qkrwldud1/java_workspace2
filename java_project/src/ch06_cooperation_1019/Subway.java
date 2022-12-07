@@ -16,7 +16,7 @@ public class Subway {
 	    
 	 public void showInfo()              // 지하철 정보 출력
 	 {
-		  System.out.println(lineNumber + "의 승객은 " + passengerCount +"명이고, 수입은 " + money + "입니다.");
+		  System.out.println("지하철 "+lineNumber + "호선의 승객은 " + passengerCount +"명이고, 수입은 " + money + "입니다.");
 	 }
 
 }

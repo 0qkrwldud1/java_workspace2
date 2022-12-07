@@ -7,12 +7,10 @@ public class PersonTest {
 		  //pjy.name ="박지영";
 		  pjy.height =160F;
 		  pjy.weight =52F; 
-		  
 		  //set메서드를 이용해서 name값 설정하기.
-		  pjy.setName("박지영-세터로추가했음.");
+		  pjy.setName("박지영");
 		  pjy.showInfo();
-		  
-		  //get 메서드를 이용할 것인지?
+		  //get 메서드를 이용해서 name값 출력.
 		  System.out.println("get메서드로 이름호출: "+pjy.getName());
 		  
 		  Person pjy2 = new Person("박지영");

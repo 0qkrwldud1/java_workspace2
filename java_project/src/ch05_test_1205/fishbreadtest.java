@@ -1,8 +1,10 @@
 package ch05_test_1205;
 
 public class fishbreadtest {
-
+		//실행할 수 있는 메인 메서드가 있는 파일.
+	
 	public static void main(String[] args) {
+		
 		//클래스명 객체명(참조형 번수) = new 클래스명()
 		fishbread fishBread1 = new fishbread();
 		// 기본 생성자 : FishBread();

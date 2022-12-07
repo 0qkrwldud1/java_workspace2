@@ -1,6 +1,7 @@
 package ch07_array_1019;
 
-import ch05_test_1205.person;
+import ch05_test.Person;
+
 
 public class ArrayTest2 {
 
@@ -8,7 +9,7 @@ public class ArrayTest2 {
 
 		double[] data = new double[5]; //선언만 값 할당x
 		String[] data2 = new String[5];
-		person[] data3 = new person[5];
+		Person[] data3 = new Person[5];
 		
 		data[0] = 10.0;
 		data[1] = 20.0;
@@ -17,8 +18,9 @@ public class ArrayTest2 {
 		//나머지는 값이 할당되지 않았기 때문에 기본값이 들어간다. -> 0
 		
 		data2[0] = "pjy";
+		data2[1] = "pjy2";
 		
-		data3[0] = new person();
+		data3[0] = new Person();
 		
 		//반복문으로 하나씩 값을 사용한다 -> 값을 불러온다.
 		for(int i=0; i<data.length; i++){

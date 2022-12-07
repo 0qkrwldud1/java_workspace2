@@ -4,7 +4,10 @@ public class Book {
 
 	private String bookName;
 	private String author;
+	private int price;
 	
+	
+
 	public Book(){}
 	
 	public Book(String bookName, String author){
@@ -12,6 +15,18 @@ public class Book {
 		this.author = author;
 	}
 	
+	public Book(String bookName, String author, int price){
+		this.bookName = bookName;
+		this.author = author;
+		this.price = price;
+	}
+	
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
 	public String getBookName() {
 		return bookName;
 	}
@@ -25,6 +40,6 @@ public class Book {
 		this.author = author;
 	}
 	public void showBookInfo(){
-		System.out.println(bookName + "," + author);
+		System.out.println(bookName + "," + author+ ","+price);
 	}
 }

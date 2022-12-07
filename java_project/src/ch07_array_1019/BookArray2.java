@@ -3,8 +3,17 @@ package ch07_array_1019;
 public class BookArray2 {
 
 	public static void main(String[] args) {
-		Book[] library = new Book[5];
+		//book이라는 클래스에 매개변수가 3개인 클래스 생성
+		//책이름, 작가, 가격 -> 매개변수
+		//참조형변수 라이브러리2번 3개 생성.
+		//출력은 기존 쇼북인포사용.
+		
+		//book클래스형으로 책들을 선언했음.
+		//해당 구성요소가 객체
 		Student[] students = new Student[5];
+		Book[] library = new Book[5];
+		Book[] library2 = new Book[3];
+		
 		students[0] = new Student("이상용1",20000);
 		students[1] = new Student("이상용2",20000);
 		students[2] = new Student("이상용3",20000);
@@ -17,16 +26,25 @@ public class BookArray2 {
 		library[3] = new Book("토지", "박경리");
 		library[4] = new Book("어린왕자", "생텍쥐페리");
 		
+		library2[0] = new Book("태백산맥", "조정래", 20000);
+		library2[1] = new Book("데미안", "헤르만 헤세", 10000);
+		library2[2] = new Book("어떻게 살 것인가", "유시민", 22000);
+			
+		
 		for(int i=0; i<students.length; i++){
 			students[i].showInfo();
 		}
+
+		for(int i=0; i<library.length; i++){
+			library[i].showBookInfo();
+		}
 		
-//		for(int i=0; i<library.length; i++){
-//			library[i].showBookInfo();
-//		}
-//		
-//		for(int i=0; i<library.length; i++){
-//			System.out.println(library[i]);
-//		}
+		for(int i=0; i<library.length; i++){
+			System.out.println(library[i]);
+		}
+		
+		for(int i=0; i<library2.length; i++){
+			library2[i].showBookInfo();
+		}
 	}
 }

@@ -1,13 +1,23 @@
 package ch07_array_1019;
 
+import ch05_test_1205.person;
+
 public class ArrayTest {
 
 	public static void main(String[] args) {
 
 		int[] number = new int[] {1,2,3,4,5,6,7,8,9,10};
-					
-		for(int i=0; i<number.length; i++){
+		String[] str1 = new String[] {"pjy1","pjy2"};
+		person[] persons = new person[] {new person(), new person()};
+		
+			for(int i=0; i<number.length; i++){
 			 System.out.println(number[i]);
+			}
+			for(int i=0; i<str1.length; i++){ 
+			 System.out.println(str1[i]);
+			}
+			for(int i=0; i<persons.length; i++){
+			 System.out.println(persons[i]);
 		}
 	}
 }

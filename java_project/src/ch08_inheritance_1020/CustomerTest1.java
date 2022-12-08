@@ -17,9 +17,9 @@ public class CustomerTest1 {
 		//상속은 한번만. 
 		
 		Customer customerLee = new Customer(10010, "이순신");
-//		Customer customerLee = new Customer();
-//		customerLee.setCustomerID(10010);
-//		customerLee.setCustomerName("이순신");
+		//Customer customerLee = new Customer();
+		//customerLee.setCustomerID(10010);
+		//customerLee.setCustomerName("이순신");
 		customerLee.bonusPoint = 1000;
 		System.out.println(customerLee.showCustomerInfo());
 		System.out.println("===============================");
@@ -45,7 +45,9 @@ public class CustomerTest1 {
 		//매개변수의 자식클래스인 vipcustomer와 부모클래ㄴ스인 customer가 같이사용된다.
 		
 		Object lsy3 =  new Object();
-		//매개변수의 최고 상위 클래스인 object라서 모두 사용가능하다.
+		//매개변수의 최고 상위 클래스인 object라서 모두 사용가능하다. 
+		//항상 암묵적으로 상속을 받고있다.
+		//오브젝트로 받고 커스터머로 사용하고 싶으면 다운캐스팅 ->명시적 형변환하여 사용한다.
 		
 		
 		

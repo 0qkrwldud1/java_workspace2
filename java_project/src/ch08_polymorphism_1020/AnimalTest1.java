@@ -3,10 +3,24 @@ package ch08_polymorphism_1020;
 import java.util.ArrayList;
 
 class Animal{
+	//좋아하는 동물 클래스 만들기
+	//각 동물들의 공통기능 하나 추가. 소리내는 기능.
+	//애니멀과 각 하위 클래스에서 재정의해서 사용.
+	//좋아하는 동물 클래스를 무브, 잇, 사운드 실행.
 	public void move()
 	{
 		System.out.println("동물이 움직입니다.");
 	}
+	
+	public void eat()
+	{
+		System.out.println("동물이 먹는다.");
+	}
+	public void sound()
+	{
+		System.out.println("동물이 소리낸다.");
+	}
+	
 }
 
 class Human extends Animal{
@@ -18,6 +32,15 @@ class Human extends Animal{
 	public void readBook()
 	{
 		System.out.println("사람이 책을 읽습니다. ");
+	}
+	
+	public void eat()
+	{
+		System.out.println("사람이 먹는다.");
+	}
+	public void sound()
+	{
+		System.out.println("사람이 말한다.");
 	}
 }
 
@@ -31,6 +54,15 @@ class Tiger extends Animal{
 	{
 		System.out.println("호랑이가 사냥을 합니다. ");
 	}
+	
+	public void eat()
+	{
+		System.out.println("고기를 먹는다.");
+	}
+	public void sound()
+	{
+		System.out.println("호랑이 울음소리");
+	}
 }
 
 class Eagle extends Animal{
@@ -43,6 +75,15 @@ class Eagle extends Animal{
 	{
 		System.out.print("독수리가 날개를 쭉 펴고 멀리 날아갑니다");
 	}
+	public void eat()
+	{
+		System.out.println("독수리가 먹는다.");
+	}
+	public void sound()
+	{
+		System.out.println("독수리 울음소리");
+	}
+	
 }
 
 class Lsy extends Animal{
@@ -54,6 +95,34 @@ class Lsy extends Animal{
 	public void read() 
 	{
 		System.out.println("이상용 책 봄.");
+	}
+	public void eat()
+	{
+		System.out.println("상용이 밥 먹는다.");
+	}
+	public void sound()
+	{
+		System.out.println("말한다.");
+	}
+}
+
+class Cat extends Animal{
+	public void move()
+	{
+		System.out.println("고양이가 걸어감.");
+	}
+	
+	public void play() 
+	{
+		System.out.println("고양이가 놀고있다.");
+	}
+	public void eat()
+	{
+		System.out.println("사료를 먹는다.");
+	}
+	public void sound()
+	{
+		System.out.println("야옹");
 	}
 }
 
@@ -67,16 +136,34 @@ public class AnimalTest1 {
 	// 해당 기능을 각 자식 클래스에서 다르게 구현을 유연하게 하기 위해서 -> 인터페이스, 추상클래스. 
 	
 	 public static void main(String[] args) {
-		  AnimalTest1 aTest = new AnimalTest1();
+		 Cat cat1 = new Cat();
+		 cat1.play(); //다형성을 이용하지 않고 객체를 만들어서 출력.
+		 
+		  AnimalTest1 aTest = new AnimalTest1(); //aniaml에서 객체를 만들어서 하위클래스를 바로사용.
 		  aTest.moveAnimal(new Human());
 		  aTest.moveAnimal(new Tiger());
 		  aTest.moveAnimal(new Eagle());
+		  aTest.moveAnimal(new Lsy());	
+		  aTest.moveAnimal(new Animal());
+		  aTest.eatFood(new Lsy());
+		  aTest.eatFood(new Tiger());
+		  aTest.animalSound(new Cat());
+		  aTest.animalSound(new Human());
 	 }
-
-	 public void moveAnimal(Animal animal) { //매개 변수의 자료형이 상위 클래스
-		  animal.move();                     //재정의 된 메서드 호출
+	 										 
+	 											
+	 public void moveAnimal(Animal animal) { 	//animal타입으로 선언.->human, tiger, eagle 다 들어올수 있음.
+		 										//매개 변수의 자료형이 상위 클래스
+		  animal.move();                     	//재정의 된 메서드 호출
 	 }   
-
+	 
+	 public void eatFood(Animal animal) {
+		 animal.eat();							
+	}
+	 
+	 public void animalSound(Animal animal) {
+		 animal.sound();							
+	}
 }
 
 

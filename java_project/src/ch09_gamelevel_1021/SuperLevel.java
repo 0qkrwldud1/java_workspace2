@@ -1,10 +1,10 @@
 package ch09_gamelevel_1021;
 
 public class SuperLevel extends PlayerLevel{
+	
 	@Override
 	public void run() {
-		System.out.println("엄청 빨리 달립니다.");
-		
+		System.out.println("엄청 빨리 달립니다.");	
 	}
 
 	@Override

@@ -10,12 +10,13 @@ public abstract class PlayerLevel {
 	
 	// 템플릿 메서드 , go 메서드 , 매개변수  count 가 들어가고,
 	// run(), 반복문으로 해당 jump , turn.
-	final public void go(int count)
-	{
-		run();
-		for(int i=0; i<count; i++){
+	final public void go(int count){
+	
+			run();
+			for(int i=0; i<count; i++){
 			jump();
 		}
-		turn();
+			turn();
 	}
 }
+

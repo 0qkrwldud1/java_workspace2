@@ -24,18 +24,17 @@ public class CalculatorTest {
 		System.out.println(calc.divide(num1, num2));
 		calc.showInfo();
 		
-		
 		//다형성 -> 해당 구현한 인터페이스형으로 받을 수 있다.
-		//안터페이스 = 부모클래스와 같은 역할.
+		//인터페이스 = 부모클래스와 같은 역할.
 		//하위클래스 전부다 인터페이스로 담을 수 있다. 
 		
-		Calc newCalc = calc; 
 		Calculator calculator = calc;
-		Calculator calc2 = calc;
+		Calc calc2 = calculator;
+		Calc newCalc = calc;
 		
 		Test t1 = new Test();
 		Calc calc3 = t1;
-		Test t2 = (Test)calc3;
+		Test t2 = (Test)calc3 ;
 		
 		
 		calc.description();   //디폴트 메소드 호출

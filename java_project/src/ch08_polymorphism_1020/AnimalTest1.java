@@ -139,8 +139,11 @@ public class AnimalTest1 {
 		 Cat cat1 = new Cat();
 		 cat1.play(); //다형성을 이용하지 않고 객체를 만들어서 출력.
 		 
-		  AnimalTest1 aTest = new AnimalTest1(); //aniaml에서 객체를 만들어서 하위클래스를 바로사용.
-		  aTest.moveAnimal(new Human());
+		  AnimalTest1 aTest = new AnimalTest1();//aniaml에서 객체를 만들어서 하위클래스를 바로사용.
+		  Human h1 = new Human();
+		  aTest.moveAnimal(h1);			//1번
+		  aTest.moveAnimal(new Human());//2번
+		  								//1번과 2번은 같은 결과가 출력된다.
 		  aTest.moveAnimal(new Tiger());
 		  aTest.moveAnimal(new Eagle());
 		  aTest.moveAnimal(new Lsy());	

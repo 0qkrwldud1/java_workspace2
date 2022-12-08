@@ -25,5 +25,5 @@ public class VIPCustomer extends Customer{
 
 	public int getAgentID(){
 		return agentID;
-	}
+	} //세터는?
 }

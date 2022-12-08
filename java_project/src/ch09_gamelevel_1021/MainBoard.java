@@ -35,6 +35,8 @@ public class MainBoard {
 		
 		Player player = new Player();
 		player.play(1);
+	
+		
 		AdvancedLevel aLevel = new AdvancedLevel();
 		player.upgradeLevel(aLevel);
 		player.play(2);

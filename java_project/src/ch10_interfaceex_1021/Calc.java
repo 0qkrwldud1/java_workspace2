@@ -13,6 +13,7 @@ public interface Calc {
 	int times(int num1, int num2);
 	int divide(int num1, int num2);
 	
+	//디폴트 -> 같은 패키지 내에서는 볼수 있음.
 	default void description(){
 		System.out.println("정수 계산기를 구현합니다");
 		myMethod();

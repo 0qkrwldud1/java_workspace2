@@ -1,6 +1,8 @@
 package ch11_object_1021;
 
-class Book{
+class Book{ //암묵적으로 오브젝트 클래스 상속받고있음. 
+			//toString()
+			
 	
 	int bookNumber;
 	String bookTitle;

@@ -1,6 +1,6 @@
 package ch09_template_test;
 
-import ch09_template_1021.Car;
+
 
 public class Genesis extends Car {
 

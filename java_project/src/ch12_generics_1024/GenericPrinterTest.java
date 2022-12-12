@@ -15,11 +15,11 @@ public class GenericPrinterTest {
 		System.out.println(plasticPrinter);
 		
 	
-	/*	GenericPrinter powderPrinter2 = new GenericPrinter();
-		powderPrinter2.setMaterial(new Powder());
-		Powder powder = (Powder)powderPrinter.getMaterial();
-		System.out.println(powderPrinter);
-		*/
-		//GenericPrinter<Water> printer = new GenericPrinter<Water>();	
+//		GenericPrinter powderPrinter2 = new GenericPrinter();
+//		powderPrinter2.setMaterial(new Powder());
+//		Powder powder = (Powder)powderPrinter.getMaterial();
+//		System.out.println(powderPrinter);
+		
+//		GenericPrinter<Water> printer = new GenericPrinter<Water>();	
 	}
 }

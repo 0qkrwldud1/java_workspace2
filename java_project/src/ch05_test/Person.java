@@ -12,7 +12,7 @@ public class Person {
 	 //멤버변수인 srting Name의 접근지정자가 프라이빗이기 때문에 
 	 //get, set함수를 사용해서 접근한다.
 	 public String getName() {
-		return name;
+		return name;//ddd
 	 }
 	 public void setName(String name) {
 		this.name = name;
